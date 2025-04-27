@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk BioGo!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://storage.googleapis.com/chatgpt-temp-file-storage/1f04a90a-9df4-4a5e-9b79-df13b229f45a/A_digital_photograph_captures_a_cornfield_bathed_i.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+    }
+    .product:hover {
+      transform: scale(1.05) rotate(1deg);
+      animation: shake 0.3s;
+    }
+    @keyframes shake {
+      0% { transform: scale(1.05) rotate(1deg) translate(0px, 0px); }
+      25% { transform: scale(1.05) rotate(1deg) translate(2px, 2px); }
+      50% { transform: scale(1.05) rotate(1deg) translate(-2px, -2px); }
+      75% { transform: scale(1.05) rotate(1deg) translate(2px, -2px); }
+      100% { transform: scale(1.05) rotate(1deg) translate(-2px, 2px); }
+    }
+    .product-name {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #d4f4c5;
+    }
+    .product-price {
+      font-size: 14px;
+      color: #ffeb99;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 991px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="product">
+    <img src="https://i.imgur.com/eyNSjZa.png" alt="Produk 1">
+    <div class="product-name">CORNOMALY 10x20 cm</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/vznl6kR.png" alt="Produk 2">
+    <div class="product-name">CORNOMALY 18x35 cm</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/FoKilSB.png" alt="Produk 3">
+    <div class="product-name">CORNOMALY 25x40 cm</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/EE0RzS2.png" alt="Produk 4">
+    <div class="product-name">CORNOMALY 35x55 cm</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/biVVbzH.png" alt="Produk 5">
+    <div class="product-name">CORNOMALY 50x70 cm</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/Wd9uJl0.png" alt="Produk 6">
+    <div class="product-name">CORNOMALY CUP 14 OZ</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/nOggAsf.jpeg" alt="Produk 7">
+    <div class="product-name">CORNOMALY CUP 18 OZ</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+
+  <div class="product">
+    <img src="https://i.imgur.com/YBgy0p5.png" alt="Produk 8">
+    <div class="product-name">CORNOMALY STRAW</div>
+    <div class="product-price">Rp10.000</div>
+  </div>
+</div>
+
+</body>
+</html>
